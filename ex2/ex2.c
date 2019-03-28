@@ -10,5 +10,12 @@ int main(void)
 {
     // Your code here 
     
+   FILE * fp;
+
+   fp = fopen ("text.txt", "r+");
+   fprintf(fp, "%s %s %s %d", "Processes - ", "LambdaSchool", "CS", 15);
+   
+   fclose(fp);
+
     return 0;
 }
